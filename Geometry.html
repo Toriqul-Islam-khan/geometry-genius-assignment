@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry-Genius</title>
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400;0,700;1,700&display=swap"
+        rel="stylesheet">
+    <!-- external css link -->
+    <link rel="stylesheet" href="Geometry.css">
+    <!-- External JavaScript -->
+    <script src="Geometry.js"></script>
+</head>
+
+<body>
+    <!-- Header.....Header.....Header -->
+    <header class="header">
+        <div>
+            <h1>Interactive</h1>
+            <p>Geometry Genius</p>
+        </div>
+        <div>
+            <button onclick="blog()">Blog</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="grid-container">
+            <div class="cart">
+                <div>
+                    <img src="images/triangle.png" alt="">
+                    <h2>Triangle</h2>
+                    <p>Area(A)=0.5*b*h</p>
+                    <input type="text" name="" id="base" value="" placeholder="b">cm,
+                    <input type="text" name="" id="height" value="" placeholder="h">cm
+                </div>
+                <div>
+                    <button onclick="triangle()">Calculate</button>
+                </div>
+            </div>
+            <div class="cart">
+                <div>
+                    <img src="images/rectangle.png" alt="">
+                    <h2>Rectangle</h2>
+                    <p>Area(A)=w*l</p>
+                    <input type="text" name="" id="width" value="" placeholder="w">cm,
+                    <input type="text" name="" id="length" value="" placeholder="l">cm
+                </div>
+                <div>
+                    <button onclick="rectangle()">Calculate</button>
+                </div>
+            </div>
+            <div class="cart">
+                <div>
+                    <img src="images/parallelogram.png" alt="">
+                    <h2>Parallelogram</h2>
+                    <p>Area(A)=0.5*b*h</p>
+                    <input type="text" name="" id="bottom" value="" placeholder="b">cm,
+                    <input type="text" name="" id="high" value="" placeholder="h">cm
+                </div>
+                <div>
+                    <button onclick="parallelogram()">Calculate</button>
+                </div>
+            </div>
+            <div class="cart">
+                <u>Area Calculation</u>
+                <ol id="list-item">
+                </ol>
+            </div>
+
+            <div class="cart">
+                <div>
+                    <img src="images/rhombus.png" alt="">
+                    <h2>Rhombus</h2>
+                    <p>Area(A)=0.5*d<sub>1</sub>*d<sub>2</sub></p>
+                    <input type="text" name="" id="diagonal-one" value="" placeholder="d1">cm,
+                    <input type="text" name="" id="diagonal-two" value="" placeholder="d2">cm
+                </div>
+                <div>
+                    <button onclick="rhombus()">Calculate</button>
+                </div>
+            </div>
+            <div class="cart">
+                <div>
+                    <img src="images/pentagon.png" alt="">
+                    <h2>Pentagon</h2>
+                    <p>Area(A)=0.5*p*b</p>
+                    <input type="text" name="" id="perimeter" value="" placeholder="p">cm,
+                    <input type="text" name="" id="apothem" value="" placeholder="b">cm
+                </div>
+                <div>
+                    <button onclick="pentagon()">Calculate</button>
+                </div>
+            </div>
+            <div class="cart">
+                <div>
+                    <img src="images/ellipse.png" alt="">
+                    <h2>Ellipse</h2>
+                    <p>Area(A)=3.146*a*b</p>
+                    <input type="text" name="" id="minorAxis" value="" placeholder="a">cm,
+                    <input type="text" name="" id="majorAxis" value="" placeholder="b">cm
+                </div>
+                <div>
+                    <button onclick="ellipse()">Calculate</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

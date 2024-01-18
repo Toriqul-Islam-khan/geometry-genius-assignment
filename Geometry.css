@@ -1,0 +1,106 @@
+/* Body-font-style */
+body {
+    font-family: 'Inter', sans-serif;
+    max-width: 1350px;
+    margin: 0px auto;
+}
+
+/* header-style */
+header {
+    background-color: rgba(16, 144, 216, 0.10);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 5px;
+}
+
+header div button {
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 8px;
+    background: #1090D8;
+    border-style: none;
+}
+
+/* main-section-style */
+
+/* row-1 */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5px;
+    margin: 2%;
+    padding: 2%;
+    gap: 20px;
+
+}
+
+.cart {
+    border: 2px rgb(238, 235, 235) solid;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.cart img {
+    width: 200px;
+    height: 200px;
+}
+
+.cart input {
+    width: 80px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.cart button {
+    width: 250px;
+    height: 56px;
+    color: white;
+    font-size: larger;
+    border-radius: 8px;
+    border-style: none;
+    background: #1090D8;
+}
+
+.cart:hover {
+    border-color: black;
+    animation: myanimation 10s infinite;
+}
+
+@keyframes myanimation {
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: yellow;
+    }
+
+    40% {
+        background-color: green;
+    }
+
+    60% {
+        background-color: brown;
+    }
+
+    80% {
+        background-color: pink;
+    }
+
+    100% {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            margin: 2%;
+            padding: 2%;
+        }
+
+        h1 {
+            color: #ff0000;
+        }
+
+        p {
+            color: black;
+            font-size: large;
+
+        }
+
+        button {
+            margin-left: 50%;
+            background-color: #0400ff;
+            font-size: x-large;
+        }
+
+        button:hover {
+            background-color: aquamarine;
+            color: black;
+        }
+    </style>
+    <!-- js link -->
+    <script src="Geometry.js"></script>
+</head>
+
+<body>
+    <div>
+        <h1>1) What Is DOM And What Is The Purpose Of DOM?</h1>
+        <p>DOM means Document Object Model (DOM), which is a programming interface for HyperText Markup Language (HTML)
+            and
+            Extensible
+            markup language (XML) documents. It defines the logical connection of documents and the way by which a
+            document is accessed
+            and
+            manipulated.
+
+        <h2>Purpose of DOM</h2>
+        <li>To create Dynamic Web Page.</li>
+        <li>Main purpose of DOM is to respond to the user actions (like clicks, inputs, or scrolls).</li>
+        <li>To update content</li>
+        </p>
+        <h1>2) How Will You Select HTML Elements Using DOM? Name The DOM Methods. </h1>
+        <p>I select HTML Elements using Class Name, Id, or Tag Name.
+        <h2>Name of The DOM Methods</h2>
+        <li>getElementByID()</li>
+        <li>getElementsByClassName()</li>
+        <li>getElementsByTagName()</li>
+        <li>querySelector()</li>
+        <li>querySelectorAll()</li>
+        </p>
+        <h1>3) What Is Event Bubble?</h1>
+        <p>Event bubbling is a process that starts with the element that triggered the event and then bubbles up to the
+            containing elements in the hierarchy. In event bubbling, the event is first captured and handled by the
+            innermost element and then propagated to outer elements.</p>
+        <h1>4) What Is A Callback Function And Why Will You Use It?</h1>
+        <p>A callback function in javascript is a function which is to be executed after another function has finished
+            its execution.
+        </p>
+        <p>
+            We use callback functions to make sure that a function is only going to get executed after a specific task
+            is completed and not before its completion.
+        </p>
+        <!-- back button -->
+        <button onclick="back()">Back</button>
+    </div>
+
+</body>
+
+</html>
